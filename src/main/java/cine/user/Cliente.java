@@ -9,7 +9,6 @@ import java.util.Map;
 
 public class Cliente extends Usuario{
     List listaReserva = new ArrayList<Reserva>();
-    Map combos = new HashMap<String, Integer>();
     public Cliente(String email, String password, String nombre, String apellido) {
         super(email, password, nombre, apellido);
     }
