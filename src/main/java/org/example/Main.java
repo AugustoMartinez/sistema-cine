@@ -1,7 +1,10 @@
 package org.example;
 
+import cine.cinelugar.Cine;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Cine cine=new Cine("Alvarado 3800", "CinemaCenter");
+        
     }
 }
