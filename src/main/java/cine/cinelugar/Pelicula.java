@@ -38,7 +38,7 @@ public class Pelicula {
         return baja;
     }
 
-    public void setBaja(boolean baja) {
+    public void darBaja(boolean baja) {
         this.baja = baja;
     }
 
