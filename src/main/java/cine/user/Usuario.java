@@ -1,5 +1,8 @@
 package cine.user;
 
+import excepciones.EmailException;
+import excepciones.LetrasException;
+
 public abstract class Usuario {
     private String email;
     private String password;
@@ -17,8 +20,12 @@ public abstract class Usuario {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String email) throws EmailException{
+        if (!email.matches("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}")) {
+            throw new EmailException("Email inválido");
+        }else{
+            this.email = email;
+        }
     }
 
     public String getPassword() {
@@ -33,16 +40,24 @@ public abstract class Usuario {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String nombre) throws LetrasException{
+        if (!nombre.matches("[a-zA-Z]+")) {
+            throw new LetrasException("El campo debe contener solo letras");
+        }else{
+            this.nombre = nombre;
+        }
     }
 
     public String getApellido() {
         return apellido;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setApellido(String apellido) throws LetrasException{
+        if (!apellido.matches("[a-zA-Z]+")) {
+            throw new LetrasException("El campo debe contener solo letras");
+        }else{
+            this.apellido = apellido;
+        }
     }
 
     public abstract void logeo();
