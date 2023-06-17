@@ -28,21 +28,17 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-<<<<<<< HEAD
             <version>2.15.1</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
-            <version>2.14.2</version>
-=======
             <version>2.12.4</version>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>unknown.binary</groupId>
             <artifactId>AbsoluteLayout</artifactId>
             <version>SNAPSHOT</version>
->>>>>>> 56c5dfa7d6ce5315dc201dc998a026842b0d6c4e
         </dependency>
     </dependencies>
 </project>
