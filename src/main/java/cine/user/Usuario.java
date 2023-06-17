@@ -11,6 +11,9 @@ public abstract class Usuario {
     private String nombre;
     private String apellido;
 
+    public Usuario() {
+    }
+
     public Usuario(String email, String password, String nombre, String apellido) {
         this.email = email;
         this.password = password;

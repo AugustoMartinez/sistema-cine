@@ -13,6 +13,9 @@ public class Cliente extends Usuario{
         super(email, password, nombre, apellido);
     }
 
+    public Cliente() {
+    }
+
     @Override
     public void logeo() {
 
