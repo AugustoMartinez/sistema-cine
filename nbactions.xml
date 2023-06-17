@@ -13,11 +13,8 @@
                 <exec.vmArgs></exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.appArgs></exec.appArgs>
-<<<<<<< HEAD
                 <exec.mainClass>Main</exec.mainClass>
-=======
                 <exec.mainClass>cine.user.Login</exec.mainClass>
->>>>>>> 56c5dfa7d6ce5315dc201dc998a026842b0d6c4e
                 <exec.executable>java</exec.executable>
             </properties>
         </action>
